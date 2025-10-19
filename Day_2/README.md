@@ -197,3 +197,36 @@ plot -vdd#branch
 - This behavior results from the charging action provided by the conducting PMOS transistor, pulling the output to Vdd
 
 ---
+# Load Line Characteristics for NMOS and PMOS Devices
+
+## Methodology for VTC Construction
+
+Transform the PMOS gate-source voltage (VgsP) to its corresponding Vin representation and generate the load voltage transfer characteristic plot.
+
+This transformation enables delay parameter identification.
+
+Express all internal node potentials using the external reference voltages: Vin, Vdd, Vss, and Vout.
+
+<img width="1395" height="707" alt="image" src="https://github.com/user-attachments/assets/e726712f-7cc2-4448-81df-ee2ecadb4fce" />
+
+## Voltage Transformation Process
+
+Convert both PMOS and NMOS drain-source voltage parameters to output voltage (Vout).
+
+### PMOS Transistor Load Characteristic Extraction:
+  
+<img width="1382" height="729" alt="image" src="https://github.com/user-attachments/assets/881f60e0-cf3b-4d40-8c1c-938e67989123" />
+
+Analysis of the PMOS load characteristic reveals complete capacitor discharge, resulting in Vout = 0.
+
+### NMOS Transistor Load Characteristic Extraction:
+
+<img width="970" height="734" alt="image" src="https://github.com/user-attachments/assets/c7b85db2-6c75-46c9-b1ce-2ae698b122d6" />
+
+## Combined VTC Generation
+
+Superimpose PMOS and NMOS load characteristics to construct the complete voltage transfer curve:
+
+<img width="1376" height="733" alt="image" src="https://github.com/user-attachments/assets/0344e3d9-87bd-4ed8-a998-dce112f1f2d5" />
+
+---
