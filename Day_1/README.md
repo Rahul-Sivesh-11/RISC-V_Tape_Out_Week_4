@@ -33,7 +33,7 @@ SPICE (Simulation Program with Integrated Circuit Emphasis) functions as the cor
 The CMOS inverter serves as the elementary component of digital circuitry. Its functionality illustrates complementary transistor switching:
 
 <p align="center">
-  <img src="Images/cmos_inverter.png" alt="CMOS Inverter Circuit" width="600"/>
+  ![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0050.jpg)
   <br>
   <em>Figure 1: CMOS Inverter Circuit Diagram</em>
 </p>
