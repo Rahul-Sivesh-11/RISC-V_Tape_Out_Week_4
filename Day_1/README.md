@@ -33,9 +33,7 @@ SPICE (Simulation Program with Integrated Circuit Emphasis) functions as the cor
 The CMOS inverter serves as the elementary component of digital circuitry. Its functionality illustrates complementary transistor switching:
 
   ![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0050.jpg)
-  <br>
-  <em>Figure 1: CMOS Inverter Circuit Diagram</em>
-</p>
+
 
 **Circuit Configuration:**
 - PMOS transistor positioned between supply voltage and output terminal
@@ -54,11 +52,8 @@ The CMOS inverter serves as the elementary component of digital circuitry. Its f
 
 SPICE produces two essential characterizations:
 
-<p align="center">
-  <img src="Images/vtc_char.png" alt="Inverter Characteristics" width="700"/>
-  <br>
-  <em>Figure 2: CMOS Inverter I-V and VTC Characteristics</em>
-</p>
+  ![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0048.jpg)
+
 
 1. **I-V Characteristic Curves**: Illustrates drain current versus output voltage under varying input scenarios
 2. **Voltage Transfer Curve (VTC)**: Depicts the relationship between input and output voltages, exposing noise margins and transition points
@@ -75,11 +70,7 @@ Contemporary timing libraries employ two-dimensional tables referenced by:
 - **Input Transition Time**: The rate of input signal edge change
 - **Load Capacitance**: Capacitive burden at the output terminal
 
-<p align="center">
-  <img src="Images/delay_table.png" alt="Delay LUT Structure" width="650"/>
-  <br>
-  <em>Figure 3: Delay Lookup Table Organization</em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0049.jpg)
 
 #### Computing Aggregate Output Capacitance
 
@@ -107,11 +98,8 @@ An NMOS transistor comprises four connection points:
 - **Source (S)**: Current entry point
 - **Bulk/Body (B)**: Substrate terminal
 
-<p align="center">
-  <img src="Images/nmos_structure.png" alt="NMOS Structure" width="500"/>
-  <br>
-  <em>Figure 6: NMOS Transistor Physical Structure</em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0046.jpg)
+  
 
 #### Operational Modes
 
@@ -138,9 +126,7 @@ An NMOS transistor comprises four connection points:
 
 **Adjusted Threshold Voltage:**
 
-<p align="center">
-  <img src="Images/threshold_eqn.png" alt="Body Effect Equation" width="400"/>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0043.jpg)
 
 ```
 V_th(V_SB) = V_th0 + γ × [√(|2φ_F| + V_SB) - √(|2φ_F|)]
@@ -227,11 +213,7 @@ This establishes the basis for deriving transistor current models from fundament
 
 VLSI design environments function across several abstraction tiers:
 
-<p align="center">
-  <img src="Images/spice_working.png" alt="Simulation Hierarchy" width="650"/>
-  <br>
-  <em>Figure 12: VLSI Design Simulation Hierarchy</em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0047.jpg)
 
 | Abstraction Tier | Tool Examples | Application |
 |-------|---------------|---------|
@@ -269,20 +251,13 @@ R<n> <node1> <node2> <resistance>
 V<n> <positive_node> <negative_node> <DC_value>
 ```
 
-<p align="center">
-  <img src="Images/example_for_spice_netlist_syntax.png" alt="Spice Netlist Syntax Example" width="500"/>
-  <br>
-  <em>Figure 13: Spice Netlist Syntax Example
-  </em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/WhatsApp%20Image%202025-10-19%20at%2010.35.51_dbf7f50b.jpg)
+ 
 
 #### Example: NMOS Device Characterization
 
-<p align="center">
-  <img src="Images/nmos_inverter.png" alt="NMOS Test Circuit" width="500"/>
-  <br>
-  <em>Figure 13: NMOS Characterization Test Circuit</em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0044.jpg)
+  
 
 ```spice
 *Model Description
@@ -334,13 +309,6 @@ mkdir -p SPICE
 git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git
 cd sky130CircuitDesignWorkshop
 ```
-
-<p align="center">
-  <img src="Images/git_clone.png" alt="Git Clone" width="500"/>
-  <br>
-  <em>Figure 13: Git Clone
-  </em>
-</p>
 
 ### Directory Organization
 ```
@@ -401,12 +369,6 @@ sudo apt-get update
 sudo apt-get install ngspice
 ```
 
-<p align="center">
-  <img src="Images/ngspice_install.png" alt="NGSPICE Installation" width="500"/>
-  <br>
-  <em>Figure 13: NGSPICE Installation
-  </em>
-</p>
 
 ### Executing Initial Simulation
 
@@ -466,11 +428,8 @@ plot -vdd#branch
 
 **Simulation Results:**
 
-<p align="center">
-  <img src="Images/iv_waveform.png" alt="NMOS I-V Curves" width="700"/>
-  <br>
-  <em>Figure 14: Simulated NMOS I-V Characteristics (W=5µm, L=2µm, Sky130)</em>
-</p>
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0045.jpg)
+ 
 
 - Multiple I_D versus V_DS curves displayed
 - Individual curves correspond to distinct V_GS values
