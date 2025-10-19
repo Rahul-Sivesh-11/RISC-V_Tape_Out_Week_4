@@ -140,3 +140,60 @@ plot -vdd#branch
 ![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0053.jpg)
 
 ---
+# CMOS Voltage-Transfer Characteristics
+
+## Overview
+
+- Voltage-transfer characteristics determine cell propagation delays
+- These characteristics enable delay calculation for specific circuit cells
+
+## MOSFET Switching Behavior
+
+**Operating Conditions:**
+- **NMOS**: Requires positive Vgs and positive Vt
+- **PMOS**: Requires negative Vgs and negative Vt
+
+### Cut-off State (OFF):
+- The MOSFET functions as an open circuit with infinite resistance under the following condition:
+- |Vgs| < |Vt|
+
+### Conducting State (ON):
+- The MOSFET operates as a closed switch with finite resistance when:
+- |Vgs| > |Vt|
+
+<img width="903" height="521" alt="image" src="https://github.com/user-attachments/assets/36a25016-81da-4700-be61-7daf19a6eb74" />
+
+---
+
+## Standard MOS Voltage-Current Parameter Fundamentals
+
+<img width="1273" height="464" alt="image" src="https://github.com/user-attachments/assets/a3e356cd-b0e9-47ff-a885-689317693c4e" />
+
+### Circuit Configuration Analysis
+
+**Left Schematic: CMOS Inverter Transistor-Level Structure**
+- PMOS device connects to the supply voltage (Vdd)
+- NMOS device connects to ground reference (Vss)
+- Input signal (Vin) drives both transistor gates simultaneously
+- Output node (Vout) is accessed at the shared drain connection
+- Load capacitance (CL) models the downstream circuitry
+
+**Center Schematic: High Input State (Vin = Vdd)**
+- NMOS transistor enters conduction mode (modeled as resistance Rn)
+- PMOS transistor enters cut-off mode (represented as open circuit)
+- Resulting output: Vout = 0
+
+**Operating Mechanism:**
+- When Vin = Vdd → Vout = 0 (NMOS conducting, PMOS non-conducting)
+- This occurs because the load capacitor reaches full charge state, establishing a direct discharge pathway from the capacitor through the conducting NMOS transistor to ground
+
+**Right Schematic: Low Input State (Vin = 0)**
+- PMOS transistor enters conduction mode (modeled as resistance Rp)
+- NMOS transistor enters cut-off mode (represented as open circuit)
+- Resulting output: Vout = Vdd
+
+**Operating Mechanism:**
+- When Vin = 0 → Vout = Vdd (PMOS conducting, NMOS non-conducting)
+- This behavior results from the charging action provided by the conducting PMOS transistor, pulling the output to Vdd
+
+---
