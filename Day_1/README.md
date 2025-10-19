@@ -1,3 +1,6 @@
+# Day-1 Basics of NMOS Drain(id) Vs Drain-to-source Voltage(Vds)
+A comprehensive guide to understanding CMOS transistor behavior, circuit analysis, and practical SPICE simulation using Sky130 technology.
+
 ## Introduction
 
 This comprehensive workshop delivers practical experience in CMOS circuit design, combining foundational theory with hands-on SPICE simulation exercises. Participants will gain proficiency in modeling, simulating, and evaluating transistor-level circuits utilizing industry-standard tools alongside the open-source Sky130 PDK.
