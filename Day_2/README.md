@@ -114,7 +114,7 @@ While short-channel devices provide advantages in switching speed and physical c
 vim day2_nfet_idvds_L015_W039.spice
 ```
 
-<img width="1129" height="704" alt="Screenshot from 2025-10-18 10-33-46" src="https://github.com/user-attachments/assets/e6974de7-0bc4-4d87-b7f5-a33da162f228" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0055.jpg)
 
 ### Waveform Visualization in ngspice
 
@@ -124,11 +124,9 @@ plot -vdd#branch
 exit
 ```
 
-<img width="1348" height="905" alt="image" src="https://github.com/user-attachments/assets/6c8d3c02-b94f-4728-b02c-fa104ca96faf" />
 
 ### Ids vs Vds Characteristic Plot (Constant Vgs):
-
-<img width="695" height="613" alt="image" src="https://github.com/user-attachments/assets/e54f1a8a-c39c-4e39-9be9-052a52486161" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0054.jpg)
 
 ### Alternative Characteristic Plot Generation
 
@@ -139,6 +137,6 @@ plot -vdd#branch
 
 ### Ids vs Vgs Characteristic Plot (Constant Vds):
 
-<img width="695" height="613" alt="image" src="https://github.com/user-attachments/assets/02756cd6-ee2f-47a0-8fe0-cbb4a84a4328" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0053.jpg)
 
 ---
