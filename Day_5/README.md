@@ -27,21 +27,21 @@ Modify supply voltage (Vdd) and regenerate VTC plots to examine switching thresh
 ```bash
 vim day5_inv_supplyvariation_Wp1_Wn036.spice
 ```
-<img width="1920" height="922" alt="image" src="https://github.com/user-attachments/assets/fe86def6-a6cc-4e33-b028-77e8b05ca98b" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0102.jpg)
 
 ### Generate Waveform Using ngspice
 
 ```bash
 ngspice day5_inv_supplyvariation_Wp1_Wn036.spice
 ```
-<img width="700" height="620" alt="image" src="https://github.com/user-attachments/assets/9675dc94-214d-4650-8657-f50f3822371d" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0101.jpg)
 
 ### View Device Variation Netlist
 
 ```bash
 vim day5_inv_devicevariation_wp7_wn042.spice
 ```
-<img width="926" height="791" alt="image" src="https://github.com/user-attachments/assets/2ecc166f-5572-46dd-8238-ca2145bd2777" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0100.jpg)
 
 ### Plot Waveform for Device Variation Analysis
 
@@ -49,6 +49,5 @@ vim day5_inv_devicevariation_wp7_wn042.spice
 ngspice day5_inv_devicevariation_wp7_wn042.spice
 plot out vs in
 ```
-<img width="926" height="791" alt="image" src="https://github.com/user-attachments/assets/24d9fa32-814f-4c48-89d1-a530a64e5600" />
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_4/blob/main/Images/IMG-20251019-WA0099.jpg)
 
----
